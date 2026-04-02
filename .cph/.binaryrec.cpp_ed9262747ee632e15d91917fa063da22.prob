@@ -1,0 +1,1 @@
+{"name":"Local: binaryrec","url":"/Users/harshkanani/Desktop/dsa/c/binaryrec.cpp","tests":[{"id":1767990637764,"input":"5\n0\n1\n101\n011110\n101010\n","output":"0\n1\n2\n6\n1\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/harshkanani/Desktop/dsa/c/binaryrec.cpp","group":"local","local":true}

@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug (terminal input)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/a.out",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "externalConsole": true,
+      "MIMode": "lldb",
+      "preLaunchTask": "build (g++-15)"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/harshkanani/Desktop/dsa/c/prac",
+      "program": "/Users/harshkanani/Desktop/dsa/c/prac/build/Debug/outDebug"
+    }
+  ]
+}

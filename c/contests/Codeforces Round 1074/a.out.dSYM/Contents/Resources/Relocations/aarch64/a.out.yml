@@ -1,0 +1,15 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/harshkanani/Desktop/dsa/c/contests/Codeforces Round 1074/a.out'
+relocations:
+  - { offset: 0x17B76, size: 0x8, addend: 0x0, symName: __ZStL8__ioinit, symObjAddr: 0x6AAD5, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offset: 0x17EAE, size: 0x8, addend: 0x0, symName: __GLOBAL__sub_I_b.cpp, symObjAddr: 0x3E0, symBinAddr: 0x100000A40, symSize: 0x38 }
+  - { offset: 0x17EC5, size: 0x8, addend: 0x0, symName: __GLOBAL__sub_I_b.cpp, symObjAddr: 0x3E0, symBinAddr: 0x100000A40, symSize: 0x38 }
+  - { offset: 0x1856E, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x380, symBinAddr: 0x100000A80, symSize: 0x5C }
+  - { offset: 0x185CA, size: 0x8, addend: 0x0, symName: __Z5solvev, symObjAddr: 0x44, symBinAddr: 0x100000784, symSize: 0x2B8 }
+  - { offset: 0x18F46, size: 0x8, addend: 0x0, symName: __ZNKSt5ctypeIcE8do_widenEc, symObjAddr: 0x0, symBinAddr: 0x100000740, symSize: 0x8 }
+  - { offset: 0x18F75, size: 0x8, addend: 0x0, symName: __Z15calculate_valueRKSt6vectorIiSaIiEE, symObjAddr: 0x8, symBinAddr: 0x100000748, symSize: 0x3C }
+  - { offset: 0x18FAB, size: 0x8, addend: 0x0, symName: __Z15calculate_valueRKSt6vectorIiSaIiEE, symObjAddr: 0x8, symBinAddr: 0x100000748, symSize: 0x3C }
+  - { offset: 0x18FCE, size: 0x8, addend: 0x0, symName: __Z15calculate_valueRKSt6vectorIiSaIiEE, symObjAddr: 0x8, symBinAddr: 0x100000748, symSize: 0x3C }
+  - { offset: 0x18FF2, size: 0x8, addend: 0x0, symName: __Z15calculate_valueRKSt6vectorIiSaIiEE, symObjAddr: 0x8, symBinAddr: 0x100000748, symSize: 0x3C }
+...

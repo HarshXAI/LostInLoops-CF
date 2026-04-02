@@ -1,0 +1,37 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build (g++-15)",
+      "type": "shell",
+      "command": "/opt/homebrew/bin/g++-15",
+      "args": [
+        "-std=c++17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Wshadow",
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}/a.out"
+      ],
+      "options": { "cwd": "${fileDirname}" },
+      "problemMatcher": ["$gcc"],
+      "group": { "kind": "build", "isDefault": true }
+    },
+    {
+      "label": "run (input.txt -> output.txt)",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-lc",
+        "\"${fileDirname}/a.out\" < \"${fileDirname}/input.txt\" > \"${fileDirname}/output.txt\""
+      ],
+      "options": { "cwd": "${fileDirname}" },
+      "problemMatcher": [],
+      "dependsOn": ["build (g++-15)"],
+      "group": "test"
+    }
+  ]
+}

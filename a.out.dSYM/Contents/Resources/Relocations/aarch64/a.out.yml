@@ -1,0 +1,13 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/harshkanani/Desktop/dsa/c/prac/a.out'
+relocations:
+  - { offset: 0x190C4, size: 0x8, addend: 0x0, symName: __ZStL8__ioinit, symObjAddr: 0x72337, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offset: 0x1950C, size: 0x8, addend: 0x0, symName: __GLOBAL__sub_I_1742E.cpp, symObjAddr: 0x560, symBinAddr: 0x100000C20, symSize: 0x38 }
+  - { offset: 0x19524, size: 0x8, addend: 0x0, symName: __GLOBAL__sub_I_1742E.cpp, symObjAddr: 0x560, symBinAddr: 0x100000C20, symSize: 0x38 }
+  - { offset: 0x1A152, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x500, symBinAddr: 0x100000C80, symSize: 0x5C }
+  - { offset: 0x1A1AE, size: 0x8, addend: 0x0, symName: __Z5solvev, symObjAddr: 0x8, symBinAddr: 0x1000007A8, symSize: 0x45C }
+  - { offset: 0x1B8B6, size: 0x8, addend: 0x0, symName: __ZNKSt5ctypeIcE8do_widenEc, symObjAddr: 0x0, symBinAddr: 0x1000007A0, symSize: 0x8 }
+  - { offset: 0x1B8E1, size: 0x8, addend: 0x0, symName: __ZNSt12_Vector_baseIiSaIiEED2Ev.isra.0, symObjAddr: 0x464, symBinAddr: 0x100000C58, symSize: 0x10 }
+  - { offset: 0x1B8FF, size: 0x8, addend: 0x0, symName: __ZNSt12_Vector_baseIiSaIiEED2Ev.isra.0, symObjAddr: 0x464, symBinAddr: 0x100000C58, symSize: 0x10 }
+...

@@ -1,0 +1,1 @@
+{"name":"Local: 1673B","url":"/Users/harshkanani/Desktop/dsa/c/prac/1673B.cpp","tests":[{"id":1768231173820,"input":"5\naba\nabb\nabc\naaaaa\nabcba\n","output":"YES\nNO\nYES\nYES\nNO\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/harshkanani/Desktop/dsa/c/prac/1673B.cpp","group":"local","local":true}
