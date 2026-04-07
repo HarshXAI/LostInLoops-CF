@@ -1,0 +1,90 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+using ll = long long;
+using vi = vector<int>;
+using vll = vector<long long>;
+
+#define all(x) (x).begin(), (x).end()
+#define rall(x) (x).rbegin(), (x).rend()
+#define pb push_back
+#define yes cout << "YES\n"
+#define no cout << "NO\n"
+
+template<typename T> istream& operator>>(istream& is, vector<T>& v) {
+    for (auto& i : v) is >> i;
+    return is;
+}
+
+template<typename T> ostream& operator<<(ostream& os, const vector<T>& v) {
+    for (int i = 0; i < (int)v.size(); i++) os << (i ? " " : "") << v[i];
+    return os;
+}
+
+#ifdef LOCAL
+template<typename A, typename B> ostream& operator<<(ostream& os, const pair<A,B>& p){
+    return os << '(' << p.first << ", " << p.second << ')';
+}
+template<typename T> ostream& operator<<(ostream& os, const vector<T>& v){
+    os << '[';
+    for (int i = 0; i < (int)v.size(); i++){
+        if (i) os << ", ";
+        os << v[i];
+    }
+    return os << ']';
+}
+inline void dbg_out(){ cerr << '\n'; }
+template<typename Head, typename... Tail>
+inline void dbg_out(Head H, Tail... T){
+    cerr << ' ' << H;
+    dbg_out(T...);
+}
+#define dbg(...) cerr << "[" << #__VA_ARGS__ << "]:", dbg_out(__VA_ARGS__)
+#else
+#define dbg(...) ((void)0)
+#endif
+void solve() {
+    int n; cin >> n;
+    vi a(n);
+    cin >> a;
+
+    if (n == 1) {
+        cout << 1 << "\n";
+        return;
+    }
+
+    vi pref_a(n), suff_a(n);
+    pref_a[0] = a[0];
+    suff_a[n - 1] = a[n - 1];
+
+    for (int i = 1; i < n; i++) {
+        pref_a[i] = gcd(pref_a[i - 1], a[i]);
+    }
+
+    for (int i = n - 2; i >= 0; i--) {
+        suff_a[i] = gcd(suff_a[i + 1], a[i]);
+    }
+
+    int cnt = 0;
+
+    for (int i = 1; i < n - 1; i++) {
+        if (gcd(pref_a[i - 1], suff_a[i + 1]) != 1) {
+            cnt++;
+        }
+    }
+
+    if (suff_a[1] != 1) cnt++;
+    if (pref_a[n - 2] != 1) cnt++;
+
+    cout << cnt << "\n";
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int T = 1;
+    cin >> T;
+    while (T--) solve();
+    return 0;
+}
